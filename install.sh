@@ -6,12 +6,6 @@ echo "*    Armageddon Masternode    *"
 echo "*           SETUP             *"
 echo "*                             *"
 echo "*******************************"
-echo ""
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo "!                                                 !"
-echo "! Make sure you double check before hitting enter !"
-echo "!                                                 !"
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 echo && echo && echo
 
 RED='\033[0;31m'
@@ -77,7 +71,6 @@ echo "masternode=1" >> /root/.armageddon/armageddon.conf
 echo "masternodeaddr$IP:11800" >> /root/.armageddon/armageddon.conf
 echo "externalip$IP:11800" >> /root/.armageddon/armageddon.conf
 echo "masternodeprivkey=$KEY" >> /root/.armageddon/armageddon.conf
-echo -e "${GREEN}STARTING THE DAEMON${NC}"
 echo -e "${GREEN}Completion: 99%...${NC}"
 cd /root
 sudo armageddond &>/dev/null
