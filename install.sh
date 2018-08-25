@@ -22,10 +22,6 @@ IP==$(curl -s4 icanhazip.com)
 echo -e "${GREEN}Please enter your private key: (Copy from Windows and right click to paste and press enter)${NC}" 
 read KEY
 sleep 2
-echo ""
-echo ""
-echo -e "${RED}PLEASE KEEP YOUR HANDS AND FEET INSIDE THE RIDE AT ALL TIMES!${NC}"
-sleep 5
 
 sudo apt-get update -y &>/dev/null
 sudo apt-get upgrade -y &>/dev/null
