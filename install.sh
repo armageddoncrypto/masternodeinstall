@@ -46,8 +46,8 @@ cd /var
 sudo touch swap.img &>/dev/null
 sudo chmod 600 swap.img &>/dev/null
 sudo dd if=/dev/zero of=/var/swap.img bs=1024k count=2000 &>/dev/null
-sudo mkswap /var/swap.img
-sudo swapon /var/swap.img
+sudo mkswap /var/swap.img &>/dev/null
+sudo swapon /var/swap.img &>/dev/null
 sudo free &>/dev/null
 sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab &>/dev/null
 echo -e "${GREEN}Completion: 85%...${NC}"
@@ -61,12 +61,8 @@ sudo ufw logging on &>/dev/null
 echo "y" | sudo ufw enable &>/dev/null
 echo -e "${GREEN}Completion: 90%...${NC}"
 sleep 2
-echo ""
-echo ""
 sudo chmod +x /root/masternodeinstall/armageddond /root/masternodeinstall/armageddon-cli
 sudo mv /root/masternodeinstall/armageddond /root/masternodeinstall/armageddon-cli /usr/local/bin
-echo ""
-echo ""
 sleep 2
 sudo mkdir /root/.armageddon
 echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /root/.armageddon/armageddon.conf
