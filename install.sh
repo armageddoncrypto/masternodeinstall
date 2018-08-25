@@ -75,7 +75,4 @@ echo -e "${GREEN}Completion: 99%...${NC}"
 cd /root
 sudo armageddond &>/dev/null
 echo -e "${GREEN}Completion: 100%...${NC}"
-sleep 2
-echo ""
-echo ""
 echo -e "Thank you for installing the Armageddon wallet.  Please move onto the ${RED}NEXT${NC} step."
